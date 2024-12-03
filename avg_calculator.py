@@ -5,8 +5,8 @@ def calculate_average_score(scores):
   for score in scores:
     total_score += score
 
-  # moved count of scores to be calculated here
-  average_score = total_score // len(scores)
+  # Removed floor division
+  average_score = (total_score / len(scores))
 
   return average_score
 
